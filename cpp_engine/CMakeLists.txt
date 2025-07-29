@@ -8,6 +8,9 @@ project(cpp_engine)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+# Force CMake to use the Python executable from our virtual environment
+set(Python3_EXECUTABLE "${CMAKE_SOURCE_DIR}/../venv/Scripts/python.exe")
+
 # Find both the Python interpreter AND the development libraries
 find_package(Python3 REQUIRED COMPONENTS Interpreter Development)
 
