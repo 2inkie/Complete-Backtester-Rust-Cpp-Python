@@ -1,0 +1,14 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# C++ / CMake Build Artifacts
+cpp_engine/build/
+*.pyd
+*.so
+*.sln
+*.vcxproj*
+
+# VS Code IDE folder
+.vscode/
