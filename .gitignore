@@ -16,3 +16,9 @@ rust_data_pipeline/target/
 
 # VS Code IDE folder
 .vscode/
+
+# APIconfig
+config.json
+
+# Data files
+data/
