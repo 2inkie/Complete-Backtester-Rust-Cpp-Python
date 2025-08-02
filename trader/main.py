@@ -18,6 +18,6 @@ def run():
     print(f'3. Analysis complete. Final log: {trade_log}')
 
 
-if __name__ == "__main__":git 
+if __name__ == "__main__":
     run()
     print('--- Backtest completed ---')
