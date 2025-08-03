@@ -17,7 +17,7 @@ def run():
     print('1. Calling Rust data pipeline...')
     
     try:
-        data_path = rust_data_pipeline.fetch_and_clean(
+        rust_data_pipeline.fetch_and_clean(
         symbol=SYMBOL,
         api_key=API_KEY,
         output_path=OUTPUT_PATH
@@ -28,7 +28,7 @@ def run():
 
     # C++ part
     print('2. [Dummy] C++ engine ran successfully.')
-    trade_log = cpp_engine.run(data_path)
+    trade_log = cpp_engine.run(OUTPUT_PATH)
 
 
     print(f'3. Analysis complete. Final log: {trade_log}')
